@@ -4,18 +4,18 @@ import { useState, useEffect, useContext } from "react";
 import { Avatar, Box, useDisclosure, IconButton } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
-import { PlayerContext } from "./context/PlayerContext";
-import bgData from "./data/gifs";
+import { PlayerContext } from "../context/PlayerContext";
+import bgData from "../data/gifs";
 
-import HeadInfo from "./components/Head";
-import PrevButton from "./components/svgButtons/PrevButton";
-import NextButton from "./components/svgButtons/NextButton";
-import PlayButton from "./components/svgButtons/PlayButton";
-import PauseButton from "./components/svgButtons/PauseButton";
-import Player from "./components/Player";
-import DrawerComponent from "./components/DrawerComponent";
+import HeadInfo from "../components/Head";
+import PrevButton from "../components/svgButtons/PrevButton";
+import NextButton from "../components/svgButtons/NextButton";
+import PlayButton from "../components/svgButtons/PlayButton";
+import PauseButton from "../components/svgButtons/PauseButton";
+import Player from "../components/Player";
+import DrawerComponent from "../components/DrawerComponent";
 
-import { fetchQuote, suffleList, useInterval } from "./helperFunctions";
+import { fetchQuote, suffleList, useInterval } from "../helperFunctions";
 
 export default function Home() {
   const [isPlaying, setPlaying] = useState(false);

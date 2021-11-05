@@ -7,7 +7,7 @@ import {
   DrawerContent,
   DrawerCloseButton
 } from "@chakra-ui/react";
-import styles from "../../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import SocialList from "./SocialList";
 import StationList from "./StationList";
 

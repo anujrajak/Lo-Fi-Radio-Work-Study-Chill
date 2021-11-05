@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import { PlayerProvider } from "./context/PlayerContext";
+import { PlayerProvider } from "../context/PlayerContext";
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
