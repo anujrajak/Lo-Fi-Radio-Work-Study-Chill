@@ -13,12 +13,19 @@ function Player({ station }) {
       playerVars: {
         allow: "autoplay",
         autoplay: 1,
+        controls: 0,
+        showinfo: 0,
+        modestbranding: 0,
+        rel: 0,
         origin: "http://localhost:3000",
       },
     });
   }, []);
 
-	const _onReady = (event) => {
+  const _onReady = (event) => {
+    if (event.target.isMuted()) {
+      event.target.unMute();
+    }
     event.target.playVideo();
   };
 

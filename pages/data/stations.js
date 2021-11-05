@@ -35,11 +35,6 @@ const stations = [
         icon: "https://yt3.ggpht.com/ytc/AKedOLQcIR9e2bdXus1Wk0DRxY1PomUvj-hPyX7V7-uzZA=s48-c-k-c0x00ffffff-no-rj"
     },
     {
-        name: "shiloh - lofi hip hop mix [LIVE 24/7] Shiloh Dynasty",
-        key: "2atQnvunGCo",
-        icon: "https://yt3.ggpht.com/13jqBNjtx8C7w49rSJk66KtzSO4g6Li53K_qX99FP4ADegNdt9UU6SZn2BryaWIzsxnkVsqK=s48-c-k-c0x00ffffff-no-rj"
-    },
-    {
         name: "Chillhop Radio - jazzy & lofi hip hop beats 🐾",
         key: "5yx6BWlEVcY",
         icon: "https://yt3.ggpht.com/GsAkxR8_-zXF99xiYVoW42htvf6mRzmmoa8SedQK30owBkjt-WMTT9QikSMdkqhjBOCk7TmmHw=s48-c-k-c0x00ffffff-no-rj"

@@ -5,28 +5,37 @@ import { IconButton } from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 
 const SocialList = () => {
+  const data = [
+    {
+      link: "https://anujrajak.github.io/",
+      icon: <GiAstronautHelmet />,
+    },
+    {
+      link: "https://www.instagram.com/lofiradioapp/",
+      icon: <FiInstagram />,
+    },
+    {
+      link: "https://github.com/anujrajak",
+      icon: <FiGithub />,
+    },
+    {
+      link: "mailto:mr.anujrajak@gmail.com",
+      icon: <FiMail />,
+    },
+  ];
+
   return (
     <HStack spacing="24px" bg="gray.800" style={{ justifyContent: "center" }}>
-      <Box w="40px" h="40px">
-        <Link href="https://anujrajak.github.io/" isExternal>
-          <IconButton icon={<GiAstronautHelmet />} colorScheme="blackAlpha" />
-        </Link>
-      </Box>
-      <Box w="40px" h="40px">
-        <Link href="https://www.instagram.com/lofiradioapp/" isExternal>
-          <IconButton icon={<FiInstagram />} colorScheme="blackAlpha" />
-        </Link>
-      </Box>
-      <Box w="40px" h="40px">
-        <Link href="https://github.com/anujrajak" isExternal>
-          <IconButton icon={<FiGithub />} colorScheme="blackAlpha" />
-        </Link>
-      </Box>
-      <Box w="40px" h="40px">
-        <Link href="mailto:mr.anujrajak@gmail.com" isExternal>
-          <IconButton icon={<FiMail />} colorScheme="blackAlpha" />
-        </Link>
-      </Box>
+      {data &&
+        data.map(({ link, icon }, index) => {
+          return (
+            <Box w="40px" h="40px" key={index}>
+              <Link href={link} isExternal>
+                <IconButton icon={icon} colorScheme="blackAlpha" />
+              </Link>
+            </Box>
+          );
+        })}
     </HStack>
   );
 };

@@ -7,6 +7,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { PlayerContext } from "./context/PlayerContext";
 import bgData from "./data/gifs";
 
+import HeadInfo from "./components/Head";
 import PrevButton from "./components/svgButtons/PrevButton";
 import NextButton from "./components/svgButtons/NextButton";
 import PlayButton from "./components/svgButtons/PlayButton";
@@ -75,6 +76,7 @@ export default function Home() {
 
   return (
     <>
+      <HeadInfo />
       {currentStation && isPlaying && (
         <Player station={currentStation} style={{ position: "absolute" }} />
       )}
