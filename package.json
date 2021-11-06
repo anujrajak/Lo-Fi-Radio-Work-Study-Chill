@@ -5,10 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "export": "next export",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build": "next build && next export"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.15",
