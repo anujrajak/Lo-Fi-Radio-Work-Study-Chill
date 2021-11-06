@@ -6,4 +6,5 @@ module.exports = withPWA({
     register: true,
     skipWaiting: true,
   },
+  assetPrefix: 'https://github.com/anujrajak/Lo-Fi-Radio-Work-Study-Chill/blob/gh-pages/'
 });
